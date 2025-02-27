@@ -12,3 +12,12 @@ print(nombre_completo)
 #su nombre y edad. Entonces escribir un mensaje
 #que le diga el año en el que puede llegar a tener
 #100 años de edad
+nombre = input("¿Cuál es tu nombre? ")
+edad = int(input("¿Cuántos años tienes? "))
+
+# Calcular el año en el que el usuario tendrá 100 años
+anio_actual = datetime.now().year
+anio_cien = anio_actual + (100 - edad)
+
+# Mostrar el mensaje
+print(f"{nombre}, alcanzarás los 100 años en el año {anio_cien}.")
