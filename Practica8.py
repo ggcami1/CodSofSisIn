@@ -8,22 +8,18 @@
 
 ciudades=["Delhi","Paris","Nueva York","Rio de Janeiro"]
 monumentos=["Red Fort","Torre Eifel","Estatua de la libertad","Cristo Redentor"]
+
 nombre_ciudad=input("Escribe el nombre de la ciudad del que quieres saber su monumento mas famoso: ")
-encontrado = False
-y = 0;
-for x in ciudades:
-    if(nombre_ciudad==x):
-        print(monumentos[y])
-        encontrado=True
-        break
-    else:
-        y += 1
-if encontrado is False:
+
+if nombre_ciudad in ciudades:
+    indice=ciudades.index(nombre_ciudad)
+    print("El monumento mas famoso de la ciudad de",nombre_ciudad,"es",monumentos[indice])
+else:
     print("No hay registro de el monumento de esa ciudad")
 #-------------------------------------------------------------------------#
 #Escriba un programa para verificar si una persona puede votar o no
 
-#-------------------------------------------------------------------------#
+#-------------------------------------------------8------------------------#
 #Escriba un programa que identifique entre dos numeros cual es el menor
  
 #-------------------------------------------------------------------------#

@@ -9,4 +9,6 @@ nombre = input("Cuantos años tienes")
 edad = input("Que edad tienes")
 profesion = input("Que deseas estudiar")
 
-print("Solucion aqui")
+print("Mi nombre es",nombre,"y tengo",edad,"años de edad.")
+print("Tambien, Siempre he querido ser",profesion)
+print("Gracias por leer me!")
