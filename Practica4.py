@@ -5,7 +5,7 @@
 #Tambien, Siempre he querido ser ________
 #Gracias por leer me!
 
-nombre = input("Cuantos años tienes")
+nombre = input("Cual es tu nombre")
 edad = input("Que edad tienes")
 profesion = input("Que deseas estudiar")
 
