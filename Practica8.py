@@ -18,12 +18,41 @@ else:
     print("No hay registro de el monumento de esa ciudad")
 #-------------------------------------------------------------------------#
 #Escriba un programa para verificar si una persona puede votar o no
+edad = int(input("Ingresa tu edad: "))
+
+if edad >= 18:
+    print("Eres elegible para votar.")
+else:
+    print("No eres elegible para votar.")
 
 #-------------------------------------------------8------------------------#
 #Escriba un programa que identifique entre dos numeros cual es el menor
- 
-#-------------------------------------------------------------------------#
-#Escribir un programa que identifique entre 4 personas cual es la de mnor edad
+numero1 = float(input("Ingresa el primer número: "))
+numero2 = float(input("Ingresa el segundo número: "))
 
+if numero1 < numero2:
+    print(f"El número menor es {numero1}")
+elif numero2 < numero1:
+    print(f"El número menor es {numero2}")
+else:
+    print("Ambos números son iguales")
 #-------------------------------------------------------------------------#
-#Escribir un programa que identifique si una letra es Mayusula o Minuscula de una palabra escrita por el usuario
+#Escribir un programa que identifique entre 4 personas cual es la de menor edad
+personas = {}
+for i in range(4):
+    nombre = input(f"Ingresa el nombre de la persona {i+1}: ")
+    edad = int(input(f"Ingresa la edad de {nombre}: "))
+    personas[nombre] = edad
+
+nombre_menor = min(personas, key=personas.get)
+edad_menor = personas[nombre_menor]
+
+print(f"La persona más joven es {nombre_menor} con {edad_menor} años.")
+#-------------------------------------------------------------------------#
+#Escribir un programa que identifique si el numero ingresado por el usuario es par o impar
+numero = int(input("Ingresa un número: "))
+
+if numero % 2 == 0:
+    print(f"El número {numero} es par.")
+else:
+    print(f"El número {numero} es impar.")

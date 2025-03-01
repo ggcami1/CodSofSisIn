@@ -1,13 +1,21 @@
-from datetime import datetime
+enero = 31
+febrero = 28
+marzo = 31
+abril = 30
+mayo = 31
+junio = 30
+julio = 31
+agosto = 31
+septiembre = 30
+octubre = 31
+noviembre = 30
+diciembre = 31
 
-# Fecha de cumple en formato YYYY-MM-DD
-birthdate_str = input("Dame tu fecha de cumpleanios (YYYY-MM-DD): ")
-birthdate = datetime.strptime(birthdate_str, "%Y-%m-%d")
+dia_nac = 10
+mes_nac = septiembre
+año_nac = 2009
+dia_hoy = 10
+mes_hoy = febrero
+año_actual = 2025
 
-# Get the current date
-current_date = datetime.now()
-
-# Calculate the age
-age = current_date.year - birthdate.year - ((current_date.month, current_date.day) < (birthdate.month, birthdate.day))
-
-print(f"Your age is: {age}")
+print(2025-2009)
