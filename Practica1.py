@@ -19,3 +19,5 @@ mes_hoy = febrero
 año_actual = 2025
 
 print(2025-2009)
+
+# El objetivo de la practica es calcular los dias que has tenido de vida
