@@ -37,17 +37,7 @@ elif numero2 < numero1:
 else:
     print("Ambos números son iguales")
 #-------------------------------------------------------------------------#
-#Escribir un programa que identifique entre 4 personas cual es la de menor edad
-personas = {}
-for i in range(4):
-    nombre = input(f"Ingresa el nombre de la persona {i+1}: ")
-    edad = int(input(f"Ingresa la edad de {nombre}: "))
-    personas[nombre] = edad
 
-nombre_menor = min(personas, key=personas.get)
-edad_menor = personas[nombre_menor]
-
-print(f"La persona más joven es {nombre_menor} con {edad_menor} años.")
 #-------------------------------------------------------------------------#
 #Escribir un programa que identifique si el numero ingresado por el usuario es par o impar
 numero = int(input("Ingresa un número: "))
