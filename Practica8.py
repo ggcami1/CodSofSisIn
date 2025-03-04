@@ -36,7 +36,6 @@ elif numero2 < numero1:
     print(f"El número menor es {numero2}")
 else:
     print("Ambos números son iguales")
-#-------------------------------------------------------------------------#
 
 #-------------------------------------------------------------------------#
 #Escribir un programa que identifique si el numero ingresado por el usuario es par o impar
