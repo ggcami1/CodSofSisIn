@@ -1,6 +1,4 @@
-from dask.array import left_shift
-
-input=[1,2,3]
+input=[5,2,4]
 def python_snake(xs):
     #determinamos el numero de filas de la matriz
     serpiente_filas= len(xs)
@@ -38,7 +36,7 @@ def python_snake(xs):
         else:
             suma=suma-body
             if suma<0:
-                pos=0
+                pos=abs(left)-abs(suma)
             else:
                 pos = suma
             cont3+=1
@@ -56,5 +54,6 @@ def python_snake(xs):
                     # lo demas es parte del cuerpo de la serpiente
                     snake[fila_serpiente][pos+j] = "X"
         fila_serpiente+=1
-    print("Snake is :", snake)
+    for row in snake:
+        print(row)
 python_snake(input)
