@@ -61,3 +61,4 @@ print('Minimo: ',valor_minimo,' Maximo: ', valor_maximo)
 
 
 
+# No es necesario importar la libreria length
