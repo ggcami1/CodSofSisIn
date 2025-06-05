@@ -1,21 +1,24 @@
-input=[5,2,4]
+input=[1,2,3]
 def python_snake(xs):
     #determinamos el numero de filas de la matriz
     serpiente_filas= len(xs)
     serpiente_columnas=0
     left=0
+    right=0
     contador=0
     for i in xs:
         if contador%2==0:
             serpiente_columnas=serpiente_columnas+i
+            #right es la posicion mas a la derecha de la serpiente
+            right=serpiente_columnas
         else:
             serpiente_columnas=serpiente_columnas-i
         if(serpiente_columnas<0):
             #left es la cantidad de espacios que hay en la primer fila desde el inicio de la matriz hasta la cabeza de la serpiente
-            left=serpiente_columnas
+            left=abs(serpiente_columnas)
         contador=contador+1
     #determinamos el numero de columnas de la matriz
-    serpiente_columnas=abs(left)+serpiente_columnas
+    serpiente_columnas=abs(left)+right
     snake = []
     #llenamos la matriz de espacios vacios
     for i in range(serpiente_filas):
@@ -26,7 +29,7 @@ def python_snake(xs):
     fila_serpiente= 0
     suma= 0
     #la primera posicion de la serpiente es el valor absoluto de left
-    pos= abs(left)
+    pos= left
     cont3= 0
     for i in xs:
         body = i
@@ -36,7 +39,7 @@ def python_snake(xs):
         else:
             suma=suma-body
             if suma<0:
-                pos=abs(left)-abs(suma)
+                pos=left-abs(suma)
             else:
                 pos = suma
             cont3+=1
