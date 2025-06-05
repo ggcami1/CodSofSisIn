@@ -1,4 +1,4 @@
-input=[1,2,3]
+input=[5,1,3,6]
 def python_snake(xs):
     #determinamos el numero de filas de la matriz
     serpiente_filas= len(xs)
@@ -49,13 +49,19 @@ def python_snake(xs):
                 snake[fila_serpiente][abs(left)]="H"
             else: #determinamos si la ultima fila va de izquierda a derecha o de derecha a izquierda para poner la cola
                   # en la posicion correcta
+                snake[fila_serpiente][pos + j] = "X"
                 if cont3%2==0 and j==(body-1) and fila_serpiente==serpiente_filas-1:
                     snake[fila_serpiente][pos]="T"
+                    print("entre1")
+                    print("pos is", pos)
+                    print("j is", j)
+                    print("i is", i)
+                    print("suma is", suma)
+                    print("body is", body)
+                    print("fila_serpiente is", fila_serpiente)
                 elif cont3%2!=0 and j==(body-1) and fila_serpiente==serpiente_filas-1:
+                    print("entre2")
                     snake[fila_serpiente][pos+j]="T"
-                else:
-                    # lo demas es parte del cuerpo de la serpiente
-                    snake[fila_serpiente][pos+j] = "X"
         fila_serpiente+=1
     for row in snake:
         print(row)
