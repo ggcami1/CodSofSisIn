@@ -55,13 +55,6 @@ def python_snake(xs):
                 snake[fila_serpiente][abs(left)]="H"
             else: #determinamos si la ultima fila va de izquierda a derecha o de derecha a izquierda para poner la cola
                   # en la posicion correcta
-                print("pos is", pos)
-                print("j is", j)
-                print("i is", i)
-                print("suma is", suma)
-                print("body is", body)
-                print("right is", right)
-                print("fila_serpiente is", fila_serpiente)
                 snake[fila_serpiente][pos + j] = "X"
                 if cont3%2==0 and j==(body-1) and fila_serpiente==serpiente_filas-1:
                     snake[fila_serpiente][pos]="T"
